@@ -4,6 +4,8 @@ Creating a Conventional Neuronal Networks that classify and label fashion images
 
 Neural networks don't work with image files, but with tensors. Therefore, we need to convert all the images into numpy arrays that Tensorflow can work with. We also need to resize the images, to save computational power and memory. To do so, we used the **image** module from the pillow library. The notebook file that does this job is called *9_3_convert-images-into-tensors.ipynb*.
 
+This practical was done in the frame of a [365DataScience](https://learn.365datascience.com) course.
+
 ## Primary classification
 
 We explored the labels and sublabels structure of our data, and decided to break it into several, smaller objectives that are solvable by a single model. The first of these is the primary classification, that is to label the image to one of three options (glasses/sunglasses, trousers/jeans, shoes). This was done in the *9_5_primary-classification-task-model.ipynb* file, in the *Primary_classification* folder.
@@ -28,4 +30,6 @@ Avalaible in *Separate* and *All* folders.
 
 ### Comparison of the methods
 
-*9_11_comparing-trousers-jeans-techniques.ipynb* file.
+The comparison was done in the *9_11_comparing-trousers-jeans-techniques.ipynb* file. We attributed scores for both approaches. We test the models with the test set. If the model's predicted label is the good one then the model scores 1 point. 
+
+The scores obtained for both models are very clore to each other (861 for the "all approach" against 860 for the "separate approach"), pratically the same, meaning that there is not significant benefit to one approach. In that case, the preferred method might be the one where the computational stress on the system and easier use it. That would be the network with four classes into one combined label.
