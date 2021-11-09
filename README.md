@@ -33,3 +33,5 @@ Avalaible in *Separate* and *All* folders.
 The comparison was done in the *9_11_comparing-trousers-jeans-techniques.ipynb* file. We attributed scores for both approaches. We test the models with the test set. If the model's predicted label is the good one then the model scores 1 point. 
 
 The scores obtained for both models are very clore to each other (861 for the "all approach" against 860 for the "separate approach"), pratically the same, meaning that there is not significant benefit to one approach. In that case, the preferred method might be the one where the computational stress on the system and easier use it. That would be the network with four classes into one combined label.
+
+## Shoes category
