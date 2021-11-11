@@ -36,4 +36,12 @@ The scores obtained for both models are very clore to each other (861 for the "a
 
 ## Shoes category
 
-The same strategy as trousers/jeans category is applied. Files and logs are available in the *Shoes* folder.
+The same strategy as trousers/jeans category is applied. Files and logs are available in the *Shoes* folder. However, for the *All* model only one model was tested, which is the equivalent to the *Model 3* of the trousers/jeans *All* category.
+
+# Limits of this project
+
+## Dropout results on trousers/jeans category
+
+We tested the dropout method to try to improve the accuracy of the model, using dropout values between 0.0 to 0.9 (0 to 90% dropout rates). Surprisingly, the accuracy goes all over the place, with sharp changes from one value of the parameter to the next. Even more surprisingly: some of the values above 50% actually perform better than the one below that threshold. Thus, the accuracy seems to fluctuate a lot due to random noise in the tensorflow operations, and due to the initialisation of the weights. We can hence hypothesise that the hyperparameter tuning we've performed so far can't lead us to any significant conclusion.
+
+This means that if we were to perform this practical rigorously, we should have trained every hyperparameter combination at least 10 times. Then we can compare the average accuracy.
