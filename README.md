@@ -26,7 +26,7 @@ In the *9_5_primary-classification-task-model-1-glasses-sunglasses.ipynb* notebo
 
 ### Two different methods
 
-Avalaible in *Separate* and *All* folders.
+Two methods are considered: one consists in making one single model that differentiate both male and female trousers/jeans, the other divides the task in three parts, hence three models. The first of the three models determines if the trousers/jeans are female or male and is called *Model_Genre*, then, according to the outcome of this model, we use either the *Model_Male* or *Model_Female* model to differentiate between trousers and jeans (knowing the gender associated to the image). The code and log files of both methods are avalaible in the *Trousers_Jeans* folder.
 
 ### Comparison of the methods
 
@@ -35,3 +35,5 @@ The comparison was done in the *9_11_comparing-trousers-jeans-techniques.ipynb* 
 The scores obtained for both models are very clore to each other (861 for the "all approach" against 860 for the "separate approach"), pratically the same, meaning that there is not significant benefit to one approach. In that case, the preferred method might be the one where the computational stress on the system and easier use it. That would be the network with four classes into one combined label.
 
 ## Shoes category
+
+The same strategy as trousers/jeans category is applied. Files and logs are available in the *Shoes* folder.
