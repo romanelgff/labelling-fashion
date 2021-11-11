@@ -36,7 +36,7 @@ The scores obtained for both models are very clore to each other (861 for the "a
 
 ## Shoes category
 
-The same strategy as trousers/jeans category is applied. Files and logs are available in the *Shoes* folder. However, for the *All* model only one model was tested, which is the equivalent to the *Model 3* of the trousers/jeans *All* category.
+The same strategy as trousers/jeans category is applied. Files and logs are available in the *Shoes* folder. However, for the *All* model only one model was tested, which is the equivalent to the *Model 3* of the trousers/jeans *All* category, and data augmentation technique was used. 
 
 # Limits of this project
 
